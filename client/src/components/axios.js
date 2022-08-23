@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://localhost:4700",
+  baseURL: "https://mern-gsmok-chatapp.herokuapp.com",
 });
 
 export const apiChannels = () => instance.get("/channels/sync");
